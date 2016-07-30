@@ -2,5 +2,5 @@
     "appSecret": "76f01857cf3e8061980d765fd28eea0c",
     "pageAccessToken": "EAAElYKHIqacBAMYeIZBnT5rCZCRay0WyAq81NaGZCeRlgYFGZCbVT06GGEaf9JCh7VsGiBpBXHHw78bbys1vLx2ZCZCnr1IrJCZBIzpaIZCMOSSZCKUJzsTZBoRZBoadV1fZBWbJnVy3AlOawGUNrlQBVZCVQMNt0A2lqpfrYRWAWlfIuJAZDZD",
     "validationToken": "abc123",
-    "serverURL": "https://upnup.herokuapp.com"
+    "serverURL": "https://upnup-giangles.rhcloud.com"
 }
