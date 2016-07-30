@@ -19,7 +19,9 @@ const
   request = require('request');
 
 var app = express();
-app.set('port', process.env.PORT || 5000);
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+app.set('port', port);
 app.set('view engine', 'ejs');
 app.use(bodyParser.json({ verify: verifyRequestSignature }));
 app.use(express.static('public'));
@@ -831,7 +833,7 @@ function callSendAPI(messageData) {
 // Start server
 // Webhooks must be available via SSL with a certificate signed by a valid 
 // certificate authority.
-app.listen(app.get('port'), function() {
+app.listen(app.get('port'), ipaddress, function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
